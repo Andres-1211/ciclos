@@ -1,11 +1,12 @@
-#Escriba un programa que muestre la tabla de multiplicar del 1 al 10 del número ingresado por el usuario:
+#Escriba un programa que pida al usuario dos números enteros, y luego entregue la suma de todos los números que están entre ellos. Por ejemplo, si los números son 1 y 7, debe entregar como resultado 2 + 3 + 4 + 5 + 6 = 20.
 
-numero = int(input("ingrese un numero para la tabla: "))
-i = 1
-while True:
-    
-    print(f"{numero} * {i} = {numero * i}")
-    i += 1
-    if i > 10:
-     break
-    
+num1 = int(input("ingrese un numero: "))
+
+num2 = int(input("ingrese un numero: "))
+
+sum = 0
+for i in range(num1 + 1, num2):
+    sum += i
+
+print(f"{sum}")
+   
