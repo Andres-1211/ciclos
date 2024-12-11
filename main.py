@@ -1,27 +1,20 @@
-#Desarrolle un programa que permita ingresar los tiempos de viaje de los tramos y entregue como resultado el tiempo total de viaje en formato horas:minutos.
-#El programa deja de pedir tiempos de viaje cuando se ingresa un 0.
+#Escriba un programa que pida al usuario ingresar la altura y el ancho de un rectángulo y lo dibuje utilizando asteriscos:
 
-def calcular_tiempo_total():
-    total_minutos = 0
-    
-    while True:
-        
-        duracion_tramo = int(input("Duracion tramo: "))
-        
-      
-        if duracion_tramo == 0:
-            break
-        
+altura = int(input("ingrese la altura "))
+ancho = int(input("ingrese el ancho "))
 
-        
-      
-        total_minutos += duracion_tramo
-    
-  
-    horas = total_minutos // 60
-    minutos = total_minutos % 60
-    
-   
-    print(f"Tiempo total de viaje: {horas}:{minutos:} horas")
-calcular_tiempo_total()
+print(f"altura:{altura}")
+print(f"ancho:{ancho}")
+for altura in range(1, altura +1):
+    for ancho in range(1, ancho +1):
+          
+          print(f"*", end = " ")
+    print()
+#Escriba un programa que dibuje el triángulo del tamaño indicado por el usuario de acuerdo al ejemplo:
+
+altura = int(input("Ingresa la altura del triángulo: "))
+
+
+for altura in range(1, altura + 1):
+    print('*' * altura)
 
